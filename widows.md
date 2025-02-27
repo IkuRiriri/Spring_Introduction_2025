@@ -75,7 +75,26 @@ Title に接続先の識別名（ex: Ubuntu），Key に先ほどコピーした
 Ubuntu のターミナルで以下のコマンドを実行します．秘密鍵のパスワードを求められた場合は，設定したパスワードを入力してください．
 
 ~~~bash
-ssh -T git@github.com
+$ ssh -T git@github.com
 ~~~
 
 Githubアカウントのユーザ名が確認できたら成功です．
+
+## Docker Desktop のインストール
+[docker](https://docs.docker.com/desktop/setup/install/windows-install/ "docker")のページの指示に従って，Docker Desktopをインストールしてください．
+
+インストール時に，`Use WSL 2 instead of Hyper-V (recommended)`にチェックが付いていることを確認してください．
+
+![DockerDesktopInstall](./figures/dockerdesktop_wsl.png "DockerDesktopInstall")
+
+その後，PC 本体の再起動を行い，Docker Desktopが起動すれば成功です．
+アカウントの登録に関しては，今回の講習では必要ありませんので，登録したい方のみで大丈夫です．
+
+確認のために，WSL2 上の Ubuntu で以下のコマンドを実行してみましょう．
+
+~~~bash
+$ docker --version
+Docker version xx.x.x
+~~~
+
+Docker のバージョンが表示されれば，成功です．
