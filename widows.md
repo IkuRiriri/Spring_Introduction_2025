@@ -98,3 +98,13 @@ Docker version xx.x.x
 ~~~
 
 Docker のバージョンが表示されれば，成功です．
+
+## VSCode のインストール
+[VSCode](https://code.visualstudio.com/download "VSCode") のホームページから VSCode をインストールしてください．
+
+また，以下の拡張機能を使用するので，併せてダウンロードしてください．
+- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+
+以上で事前準備は終了です．
