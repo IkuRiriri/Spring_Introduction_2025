@@ -58,19 +58,24 @@ $ git config --global user.email [任意のメールアドレス]
 $ ssh-keygen -t ed25519 -C "[任意のメールアドレス]" -f ~/.ssh/github
 ~~~
 
-続いて，公開鍵を Github アカウントへと登録します．以下のコマンドで出力される公開鍵をコピーします．
+次に，公開鍵を Github アカウントへと登録します．以下のコマンドで出力される公開鍵をコピーします．
 
 ~~~bash
 $ cat ~/.ssh/github.pub
 ~~~
 ログインした状態で[Github のホームページ](https://github.com/ "Github のホームページ")にアクセスし，右上のユーザアイコンを押下し，Settings > SSH and GPG keys > New SSH key を選択します．
 
-![ssh1](./figures/ssh1.png "ssh1")
-
-![ssh2](./figures/ssh2.png "ssh2")
-
-![ssh3](./figures/ssh3.png "ssh3")
-
 Title に接続先の識別名（ex: Ubuntu），Key に先ほどコピーした公開鍵を入力し，Add SSH key で登録します．
 
 ![ssh4](./figures/ssh4.png "ssh4")
+
+これで，Githubアカウントに対して公開鍵が設定されました．
+正しく設定できていることを確認するために，接続テストを行います．
+
+Ubuntu のターミナルで以下のコマンドを実行します．秘密鍵のパスワードを求められた場合は，設定したパスワードを入力してください．
+
+~~~bash
+ssh -T git@github.com
+~~~
+
+Githubアカウントのユーザ名が確認できたら成功です．
