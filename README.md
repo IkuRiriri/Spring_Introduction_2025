@@ -3,5 +3,5 @@
 参加者の方は，以下の指示に従って事前準備をお願いします．
 
 - [Windows ユーザの方はこちら](./widows.md "For Windows Users")
-- [MacOS ユーザの方はこちら](./widows.md "For MacOS Users")
+- [MacOS ユーザの方はこちら](./mac.md "For MacOS Users")
 - その他の OS を使用している方がいれば，別途連絡ください．
