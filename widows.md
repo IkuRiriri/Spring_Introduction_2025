@@ -86,6 +86,17 @@ $ ssh -T git@github.com
 
 Githubアカウントのユーザ名が確認できたら成功です．
 
+<details><summary>うまくいかない場合</summary>
+
+`~/.ssh/config`に以下のファイルを追加してみてください．
+~~~
+Host github github.com
+  HostName github.com
+  IdentityFile ~/.ssh/github
+  User git
+~~~
+</details>
+
 ## Docker Desktop のインストール
 [docker](https://docs.docker.com/desktop/setup/install/windows-install/ "docker")のページの指示に従って，Docker Desktopをインストールしてください．
 
